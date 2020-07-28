@@ -5,9 +5,11 @@ import pyautogui
 # Setting Variables
 i = 0
 spacing = 0.1
-wait = 5
+wait = 60*10
+
 fee = 40
 split = 0.25
+
 auto_dep = False
 
 # Recipients list, with added characters to prevent automated spamming of our usernames.
@@ -20,7 +22,7 @@ while i < recipients_num:
     recipients[i] = recipients[i].replace("@", "")
     i += 1
 
-# message box alerting user that the program is running.
+# Message box alerting user that the program is running.
 pyautogui.alert("Running!")
 
 # Setting first wait_time so that it doesn't have an infinite loop.
