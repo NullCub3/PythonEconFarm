@@ -37,7 +37,7 @@ while True:  # Main loop
 
     elif keyboard.is_pressed('q'):  # checks if the Q key has been pressed.
         auto_dep = not auto_dep  # Toggles the boolean auto_dep
-        pyautogui.press('backspace')  # Removes the Q from the chat box
+        pyautogui.press('backspace')  # Removes the Q from the chat box (or at least it should, doesnt right now)
 
         pyautogui.alert("AutoDep is " + ("off", "on")[auto_dep] + "!")  # message box with the status of AutoDep
 
